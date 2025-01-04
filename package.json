@@ -18,7 +18,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "release": "npm run build --filter=@ds-changesets/components && changeset publish",
+    "release": "npm run build && changeset publish",
     "changeset": "changeset",
     "version-packages": "changeset version"
   },
