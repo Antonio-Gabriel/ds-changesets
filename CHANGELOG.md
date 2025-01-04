@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- initial release
+
+## 0.0.1
+
+### Patch Changes
+
 - 687928d: initial release
 
 ## 0.0.1
