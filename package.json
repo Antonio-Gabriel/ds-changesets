@@ -1,11 +1,19 @@
 {
   "name": "@ds-changesets/components",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --tsconfig tsconfig.app.json",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -15,7 +23,7 @@
     "version-packages": "changeset version"
   },
   "dependencies": {
-    "react": "^18.3.1",
+    "react": "^18.2.0",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
@@ -43,6 +51,7 @@
     "storybook": "^8.4.7",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
+    "tsup": "^8.3.5",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
@@ -51,5 +60,11 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
