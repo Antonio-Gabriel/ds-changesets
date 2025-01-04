@@ -1,5 +1,5 @@
 ---
-"@ds-changesets/components": patch
+"ds-changesets-components": patch
 ---
 
 initial release
