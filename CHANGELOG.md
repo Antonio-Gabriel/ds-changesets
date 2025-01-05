@@ -1,5 +1,11 @@
 # @ds-changesets/components
 
+## 0.1.0
+
+### Minor Changes
+
+- descriptional button variant
+
 ## 0.0.2
 
 ### Patch Changes
