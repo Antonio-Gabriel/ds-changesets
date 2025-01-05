@@ -1,7 +1,7 @@
 {
   "name": "ds-changesets-components2",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
