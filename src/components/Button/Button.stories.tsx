@@ -23,3 +23,11 @@ export const Secondary: Story = {
     variant: "Secondary",
   },
 };
+
+export const WithDescription: Story = {
+  args: {
+    label: "Description Button",
+    variant: "Primary",
+    description: 'Description'
+  },
+};
